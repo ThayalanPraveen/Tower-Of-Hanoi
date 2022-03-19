@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac) linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac); background-image: linear-gradient(to left bottom, #d3fbd8, #baf2d0, #9fe9ca, #82e0c7, #5fd6c6, #51d5c7, #41d3c8, #2ad2c9, #3cd9ca, #4ce0ca, #5ae6cb, #68edcb); background-image: linear-gradient(to right, #d3fbd8, #baf2d0, #9fe9ca, #82e0c7, #5fd6c6, #51d5c7, #41d3c8, #2ad2c9, #3cd9ca, #4ce0ca, #5ae6cb, #68edcb); background-image: linear-gradient(to top, #000000, #2a2029, #423e56, #436488, #248fb1, #00a6bf, #00bcc7, #2ad2c9, #3cd9ca, #4ce0ca, #5ae6cb, #68edcb); background-image: linear-gradient(to right top, #000000, #2a2029, #423e56, #436488, #248fb1, #00a6bf, #00bcc7, #2ad2c9, #3cd9ca, #4ce0ca, #5ae6cb, #68edcb); background-image: linear-gradient(to right top, #67fc83, #49f091, #2be39b, #0cd6a3, #00c9a7, #13c7aa, #20c6ad, #2bc4b0, #3dceb7, #4cd8be, #5ae3c4, #68edcb); background-image: linear-gradient(to bottom, #67fc83, #49f091, #2be39b, #0cd6a3, #00c9a7, #00bca8, #00b0a6, #00a3a2, #00959c, #008795, #00798b, #006b81);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="towerhanoi.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Text layoutX="431.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tower Of Hanoi!" AnchorPane.leftAnchor="431.0" AnchorPane.rightAnchor="389.8919677734375">
+         <font>
+            <Font name="Silom" size="54.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Text>
+      <Button layoutX="513.0" layoutY="389.0" mnemonicParsing="false" onAction="#ins" prefHeight="66.0" prefWidth="291.0" text="Read Instructions" AnchorPane.leftAnchor="512.0">
+         <font>
+            <Font name="Silom" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainstart" layoutX="512.0" layoutY="224.0" mnemonicParsing="false" onAction="#Start" prefHeight="132.0" prefWidth="291.0" text="Start Game" AnchorPane.leftAnchor="512.0">
+         <font>
+            <Font name="Silom" size="38.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="395.0" fitWidth="452.0" layoutX="-5.0" layoutY="366.0">
+         <image>
+            <Image url="@Pic2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="117.0" layoutX="315.0" layoutY="27.0">
+         <image>
+            <Image url="@Pic1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="604.0" fitWidth="506.0" layoutX="738.0" layoutY="166.0">
+         <image>
+            <Image url="@Pic3.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#101820" height="72.0" layoutX="46.0" layoutY="695.0" stroke="BLACK" strokeType="INSIDE" width="359.0" AnchorPane.bottomAnchor="3.0" />
+      <ImageView fitHeight="321.0" fitWidth="1296.0" layoutX="-2.0" layoutY="457.0">
+         <image>
+            <Image url="@Pic4.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

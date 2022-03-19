@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+   <children>
+      <Text layoutX="237.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSTRUCTIONS">
+         <font>
+            <Font name="Silom" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The objective of the puzzle is to move the entire stack to the last rod, obeying the following simple rules:" />
+      <Text layoutX="211.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only one disk may be moved at a time." underline="true" wrappingWidth="207.38427734375" />
+      <Text layoutX="13.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or an empty rod." textAlignment="CENTER" underline="true" wrappingWidth="603.3641967773438" />
+      <Text layoutX="161.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No disk may be placed on top of a disk that is smaller than it." underline="true" />
+      <Text layoutX="257.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME TYPES">
+         <font>
+            <Font name="Silom" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="268.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTROLS">
+         <font>
+            <Font name="Silom" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="139.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click On The Rod To Move To &amp; Click The Disk">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="4.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Expert : the player needs to be able to move all disks to the destination rod within minimum number of moves" AnchorPane.leftAnchor="4.0" />
+      <Text layoutX="5.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Intermediate : the player can do the above movement within minimum number of movements + 3" AnchorPane.leftAnchor="4.0" />
+      <Text layoutX="4.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Novice : the player has the freedom to move disks without any conditions (no limits for the moves)" AnchorPane.leftAnchor="4.0" />
+   </children>
+</AnchorPane>

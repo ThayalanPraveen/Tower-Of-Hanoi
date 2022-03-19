@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <SCRIPT src="https://java.com/js/dtjava.js"></SCRIPT><script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'TowerHanoi.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IlRvd2VySGFub2kuam5scCI+CiAgICA8aW5mb3JtYXRpb24+CiAgICAgICAgPHRpdGxlPlRvd2VySGFub2k8L3RpdGxlPgogICAgICAgIDx2ZW5kb3I+dGhheWFsYW5wcmF2ZWVuPC92ZW5kb3I+CiAgICAgICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPgogICAgICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogICAgPC9pbmZvcm1hdGlvbj4KICAgIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPgogICAgPHJlc291cmNlcz4KICAgICAgICA8ajJzZSB2ZXJzaW9uPSIxMS4wLjExKyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPgogICAgICAgIDxqYXIgaHJlZj0iVG93ZXJIYW5vaS5qYXIiIHNpemU9Ijk5MDM1ODUiIGRvd25sb2FkPSJlYWdlciIvPgogICAgPC9yZXNvdXJjZXM+CiAgICA8amZ4OmphdmFmeC1kZXNjIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJ0b3dlcmhhbm9pLlRvd2VySGFub2kiIG5hbWU9IlRvd2VySGFub2kiLz4KPC9qbmxwPgoK'
+            },
+            {
+                javafx : '11.0.11+'
+            },
+            {}
+        );
+        return false;
+    }
+</script><script>
+    function javafxEmbedtowerhanoi() {
+        dtjava.embed(
+            {
+                id : 'towerhanoi',
+                url : 'TowerHanoi.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IlRvd2VySGFub2kuam5scCI+CiAgICA8aW5mb3JtYXRpb24+CiAgICAgICAgPHRpdGxlPlRvd2VySGFub2k8L3RpdGxlPgogICAgICAgIDx2ZW5kb3I+dGhheWFsYW5wcmF2ZWVuPC92ZW5kb3I+CiAgICAgICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPgogICAgICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogICAgPC9pbmZvcm1hdGlvbj4KICAgIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPgogICAgPHJlc291cmNlcz4KICAgICAgICA8ajJzZSB2ZXJzaW9uPSIxMS4wLjExKyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPgogICAgICAgIDxqYXIgaHJlZj0iVG93ZXJIYW5vaS5qYXIiIHNpemU9Ijk5MDM1ODUiIGRvd25sb2FkPSJlYWdlciIvPgogICAgPC9yZXNvdXJjZXM+CiAgICA8amZ4OmphdmFmeC1kZXNjIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJ0b3dlcmhhbm9pLlRvd2VySGFub2kiIG5hbWU9IlRvd2VySGFub2kiLz4KPC9qbmxwPgoK'
+            },
+            {
+                javafx : '11.0.11+'
+            },
+            {}
+        );
+    }
+    
+            <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedtowerhanoi);
+</script>
+    </head>
+    <body>
+        <h2>
+            Test page for <b>TowerHanoi</b>
+        </h2>
+        <b>Webstart:</b><a href="TowerHanoi.jnlp" onclick="return launchApplication('TowerHanoi.jnlp');">click to launch this app as webstart</a>
+        <br>
+        <hr>
+        <br>
+        
+        <!-- Applet will be inserted here -->
+        <div id="javafx-app-placeholder"></div>
+    </body>
+</html>

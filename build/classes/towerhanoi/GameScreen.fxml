@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="Pane1" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac) linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac); background-image: linear-gradient(to left bottom, #d3fbd8, #baf2d0, #9fe9ca, #82e0c7, #5fd6c6, #51d5c7, #41d3c8, #2ad2c9, #3cd9ca, #4ce0ca, #5ae6cb, #68edcb); background-image: linear-gradient(to right, #d3fbd8, #baf2d0, #9fe9ca, #82e0c7, #5fd6c6, #51d5c7, #41d3c8, #2ad2c9, #3cd9ca, #4ce0ca, #5ae6cb, #68edcb); background-image: linear-gradient(to top, #000000, #2a2029, #423e56, #436488, #248fb1, #00a6bf, #00bcc7, #2ad2c9, #3cd9ca, #4ce0ca, #5ae6cb, #68edcb); background-image: linear-gradient(to right top, #000000, #2a2029, #423e56, #436488, #248fb1, #00a6bf, #00bcc7, #2ad2c9, #3cd9ca, #4ce0ca, #5ae6cb, #68edcb); background-image: linear-gradient(to right top, #67fc83, #49f091, #2be39b, #0cd6a3, #00c9a7, #13c7aa, #20c6ad, #2bc4b0, #3dceb7, #4cd8be, #5ae3c4, #68edcb); background-image: linear-gradient(to bottom, #67fc83, #49f091, #2be39b, #0cd6a3, #00c9a7, #00bca8, #00b0a6, #00a3a2, #00959c, #008795, #00798b, #006b81);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="towerhanoi.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="384.0" layoutX="219.0" layoutY="252.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="44.0" AnchorPane.bottomAnchor="84.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6100000143051147" green="0.4064778685569763" blue="0.11590000241994858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8355262875556946" green="0.7976181507110596" blue="0.6459856033325195" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+       
+      </Rectangle>
+      <Button fx:id="rodA" layoutX="193.0" layoutY="657.0" mnemonicParsing="false" onAction="#rodA" prefHeight="47.0" prefWidth="94.0" text="Rod A" AnchorPane.bottomAnchor="16.0">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="rodB" layoutX="591.0" layoutY="657.0" mnemonicParsing="false" onAction="#rodB" prefHeight="47.0" prefWidth="94.0" text="Rod B" AnchorPane.bottomAnchor="16.0">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="rodC" layoutX="1002.0" layoutY="658.0" mnemonicParsing="false" onAction="#rodC" prefHeight="47.0" prefWidth="94.0" text="Rod C" AnchorPane.bottomAnchor="16.0">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="disk1" layoutX="1005.0" layoutY="97.0" mnemonicParsing="false" onAction="#secret" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(to right top, #c189ed, #a86cd7, #8e4fc2, #7532ad, #5b0d98);background-image: linear-gradient(to right top, #c189ed, #a86cd7, #8e4fc2, #7532ad, #5b0d98);; background-image: linear-gradient(to bottom, #43ed29, #77f069, #9ef397, #c2f3c0, #e6f2e6); background-image: linear-gradient(to bottom, #ed8f29, #f0782c, #f16034, #ee443e, #e91e4a); background-image: linear-gradient(to bottom, #29ede4, #32f2c3, #69f495, #9ff160, #d7e91e); background-image: linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac); background-image: linear-gradient(to bottom, #15baf4, #0096eb, #0071dc, #0048c5, #280fa1); background-image: linear-gradient(to bottom, #f4c415, #e6ce00, #d5d800, #c0e200, #a8eb12); background-image: linear-gradient(to right top, #f4154f, #ff5b24, #f59100, #d8c000, #a8eb12);" AnchorPane.bottomAnchor="585.0" AnchorPane.leftAnchor="1005.0">
+         <effect>
+            <DropShadow height="73.81" offsetX="10.0" offsetY="10.0" radius="40.555" spread="0.02" width="90.41" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="disk2" layoutX="288.0" layoutY="86.0" mnemonicParsing="false" onAction="#secret" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: linear-gradient(to right top, #7469e7, #6253d3, #513ebf, #3f27ac, #2b0d98);background-image: linear-gradient(to right top, #7469e7, #6253d3, #513ebf, #3f27ac, #2b0d98);; background-image: linear-gradient(to bottom, #43ed29, #77f069, #9ef397, #c2f3c0, #e6f2e6); background-image: linear-gradient(to bottom, #ed8f29, #f0782c, #f16034, #ee443e, #e91e4a); background-image: linear-gradient(to bottom, #29ede4, #32f2c3, #69f495, #9ff160, #d7e91e); background-image: linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac); background-image: linear-gradient(to bottom, #15baf4, #0096eb, #0071dc, #0048c5, #280fa1); background-image: linear-gradient(to bottom, #f4c415, #e6ce00, #d5d800, #c0e200, #a8eb12); background-image: linear-gradient(to right top, #f4154f, #ff5b24, #f59100, #d8c000, #a8eb12);" AnchorPane.bottomAnchor="596.0" AnchorPane.leftAnchor="288.0">
+         <effect>
+            <DropShadow height="73.81" offsetX="10.0" offsetY="10.0" radius="40.555" spread="0.02" width="90.41" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="disk3" layoutX="1197.0" layoutY="107.0" mnemonicParsing="false" onAction="#secret" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: linear-gradient(to right top, #7aa6e0, #5e8fd8, #4477cf, #2e5fc4, #1e46b7);background-image: linear-gradient(to right top, #7aa6e0, #5e8fd8, #4477cf, #2e5fc4, #1e46b7);; background-image: linear-gradient(to bottom, #43ed29, #77f069, #9ef397, #c2f3c0, #e6f2e6); background-image: linear-gradient(to bottom, #ed8f29, #f0782c, #f16034, #ee443e, #e91e4a); background-image: linear-gradient(to bottom, #29ede4, #32f2c3, #69f495, #9ff160, #d7e91e); background-image: linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac); background-image: linear-gradient(to bottom, #15baf4, #0096eb, #0071dc, #0048c5, #280fa1); background-image: linear-gradient(to bottom, #f4c415, #e6ce00, #d5d800, #c0e200, #a8eb12); background-image: linear-gradient(to right top, #f4154f, #ff5b24, #f59100, #d8c000, #a8eb12);" AnchorPane.bottomAnchor="575.0" AnchorPane.leftAnchor="1197.0">
+         <effect>
+            <DropShadow height="73.81" offsetX="10.0" offsetY="10.0" radius="40.555" spread="0.02" width="90.41" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="disk4" layoutX="953.0" layoutY="59.0" mnemonicParsing="false" onAction="#secret" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: linear-gradient(to right top, #7ae09d, #63cc85, #4cb96d, #33a555, #10923d);background-image: linear-gradient(to right top, #7ae09d, #63cc85, #4cb96d, #33a555, #10923d);; background-image: linear-gradient(to bottom, #43ed29, #77f069, #9ef397, #c2f3c0, #e6f2e6); background-image: linear-gradient(to bottom, #ed8f29, #f0782c, #f16034, #ee443e, #e91e4a); background-image: linear-gradient(to bottom, #29ede4, #32f2c3, #69f495, #9ff160, #d7e91e); background-image: linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac); background-image: linear-gradient(to bottom, #15baf4, #0096eb, #0071dc, #0048c5, #280fa1); background-image: linear-gradient(to bottom, #f4c415, #e6ce00, #d5d800, #c0e200, #a8eb12); background-image: linear-gradient(to right top, #f4154f, #ff5b24, #f59100, #d8c000, #a8eb12);" AnchorPane.bottomAnchor="623.0" AnchorPane.leftAnchor="953.0">
+         <effect>
+            <DropShadow height="73.81" offsetX="10.0" offsetY="10.0" radius="40.555" spread="0.02" width="90.41" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="disk5" layoutX="1024.0" layoutY="111.0" mnemonicParsing="false" onAction="#secret" prefHeight="38.0" prefWidth="208.0" style="-fx-background-color: linear-gradient(to right top, #d1ed1a, #c7e31d, #bdd91e, #b3d020, #a9c621);background-image: linear-gradient(to right top, #d1ed1a, #c7e31d, #bdd91e, #b3d020, #a9c621);; background-image: linear-gradient(to bottom, #43ed29, #77f069, #9ef397, #c2f3c0, #e6f2e6); background-image: linear-gradient(to bottom, #ed8f29, #f0782c, #f16034, #ee443e, #e91e4a); background-image: linear-gradient(to bottom, #29ede4, #32f2c3, #69f495, #9ff160, #d7e91e); background-image: linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac); background-image: linear-gradient(to bottom, #15baf4, #0096eb, #0071dc, #0048c5, #280fa1); background-image: linear-gradient(to bottom, #f4c415, #e6ce00, #d5d800, #c0e200, #a8eb12); background-image: linear-gradient(to right top, #f4154f, #ff5b24, #f59100, #d8c000, #a8eb12);" AnchorPane.bottomAnchor="571.0" AnchorPane.leftAnchor="1024.0">
+         <effect>
+            <DropShadow height="73.81" offsetX="10.0" offsetY="10.0" radius="40.555" spread="0.02" width="90.41" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="disk6" layoutX="29.0" layoutY="30.0" mnemonicParsing="false" onAction="#secret" prefHeight="38.0" prefWidth="239.0" style="-fx-background-color: linear-gradient(to right top, #f6eb07, #f5d300, #f2bb00, #eca400, #e38e08);background-image: linear-gradient(to right top, #f6eb07, #f5d300, #f2bb00, #eca400, #e38e08);; background-image: linear-gradient(to bottom, #43ed29, #77f069, #9ef397, #c2f3c0, #e6f2e6); background-image: linear-gradient(to bottom, #ed8f29, #f0782c, #f16034, #ee443e, #e91e4a); background-image: linear-gradient(to bottom, #29ede4, #32f2c3, #69f495, #9ff160, #d7e91e); background-image: linear-gradient(to bottom, #15c4f4, #00a2ee, #007de3, #0056ce, #2b25ac); background-image: linear-gradient(to bottom, #15baf4, #0096eb, #0071dc, #0048c5, #280fa1); background-image: linear-gradient(to bottom, #f4c415, #e6ce00, #d5d800, #c0e200, #a8eb12); background-image: linear-gradient(to right top, #f4154f, #ff5b24, #f59100, #d8c000, #a8eb12);" AnchorPane.bottomAnchor="652.0" AnchorPane.leftAnchor="29.0">
+         
+         <effect>
+            <DropShadow height="73.81" offsetX="10.0" offsetY="10.0" radius="40.555" spread="0.02" width="90.41" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="disk7" layoutX="1079.0" layoutY="21.0" mnemonicParsing="false" onAction="#secret" prefHeight="38.0" prefWidth="271.0" style="-fx-background-color: linear-gradient(to right top, #f97295, #f65f81, #f14a6d, #eb3157, #e30841);background-image: linear-gradient(to right top, #f97295, #f65f81, #f14a6d, #eb3157, #e30841);; background-image: linear-gradient(to bottom, #edc229, #dbd562, #d1e393, #d4ecc0, #e6f2e6); background-image: linear-gradient(to bottom, #ed296d, #ec7754, #dcac6b, #d2d5a6, #e6f2e6); background-image: linear-gradient(to bottom, #43ed29, #36ce21, #29b11a, #1c9413, #10780b); background-image: linear-gradient(to bottom, #e549a1, #c635a5, #a128a9, #7324ab, #2b25ac); background-image: linear-gradient(to bottom, #15f4a6, #00cdd0, #00a0ef, #006ce8, #2b25ac); background-image: linear-gradient(to bottom, #28f415, #22ce1b, #1ea91d, #1b861b, #186418);" AnchorPane.bottomAnchor="661.0">
+         
+         <effect>
+            <DropShadow height="111.53" offsetX="10.0" offsetY="10.0" radius="50.74" width="93.43" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="disk8" layoutX="-30.0" layoutY="93.0" mnemonicParsing="false" onAction="#secret" prefHeight="38.0" prefWidth="305.0" style="-fx-background-color: linear-gradient(to right top, #5c5758, #4b4243, #3a2d30, #2a1a1e, #1c0108);background-image: linear-gradient(to right top, #5c5758, #4b4243, #3a2d30, #2a1a1e, #1c0108);; background-image: linear-gradient(to bottom, #29eded, #7eefdf, #abf0d9, #cdf1db, #e6f2e6); background-image: linear-gradient(to bottom, #dee549, #ff9927, #fe3d53, #c40088, #2b25ac);" AnchorPane.bottomAnchor="589.0">
+         
+         <effect>
+            <DropShadow height="99.46" offsetX="10.0" offsetY="10.0" radius="46.9675" width="90.41" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text layoutX="458.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tower Of Hanoi!" AnchorPane.leftAnchor="458.0" AnchorPane.rightAnchor="440.8919677734375">
+         <font>
+            <Font name="Silom" size="54.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="384.0" layoutX="616.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="44.0" AnchorPane.bottomAnchor="84.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6100000143051147" green="0.4064778685569763" blue="0.11590000241994858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8355262875556946" green="0.7976181507110596" blue="0.6459856033325195" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="384.0" layoutX="1028.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="44.0" AnchorPane.bottomAnchor="84.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6100000143051147" green="0.4064778685569763" blue="0.11590000241994858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8355262875556946" green="0.7976181507110596" blue="0.6459856033325195" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button layoutX="60.0" layoutY="68.0" mnemonicParsing="false" onAction="#ins" prefHeight="53.0" prefWidth="243.0" style="-fx-background-color: white;" text="Read Instructions" AnchorPane.bottomAnchor="599.0">
+         <font>
+            <Font name="Silom" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="1004.0" layoutY="64.0" mnemonicParsing="false" onAction="#scores" prefHeight="53.0" prefWidth="243.0" style="-fx-background-color: white; background-image: linear-gradient(to right top, #f2ffb5, #fff2c7, #fff0ec, #fff8ff, #ffffff);" text="Best Scores" AnchorPane.bottomAnchor="603.0">
+         <font>
+            <Font name="Silom" size="21.0" />
+         </font>
+      </Button>
+      
+    </children>
+</AnchorPane>
